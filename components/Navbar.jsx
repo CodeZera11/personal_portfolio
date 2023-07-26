@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
-import { GrContactInfo } from "react-icons/gr";
+import { IoIosContact } from "react-icons/io";
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -16,9 +16,11 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="fixed w-full bg-black px-10 h-20 items-center flex justify-between shadow-xl shadow-gray-500 ">
+      <div className="fixed w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-gray-600 ">
         <div className="">
-          <p className="text-[#4CC966] text-2xl">Personal Portfolio</p>
+          <Link href={"/"} className="text-[#4CC966] text-2xl">
+            Personal Portfolio
+          </Link>
         </div>
         <div className="hidden md:flex gap-10 text-xl">
           <ul className="flex gap-10 text-md mr-5 text-[#4CC966]">
@@ -41,7 +43,7 @@ const Navbar = () => {
         </div>
 
         <div onClick={() => toggleNav()} className="md:hidden">
-          <AiOutlineMenu color="#4CC966" />
+          <AiOutlineMenu color="#4CC966" size={30} />
         </div>
       </div>
 
@@ -129,7 +131,7 @@ const Navbar = () => {
                   href={"/"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
-                  <GrContactInfo size={25} />
+                  <IoIosContact size={25} />
                 </Link>
               </div>
             </div>
