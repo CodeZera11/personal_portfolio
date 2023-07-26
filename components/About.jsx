@@ -8,8 +8,8 @@ const About = () => {
       <div>
         <div className="relative w-full md:h-screen bg-gray-600 flex items-center justify-center flex-col">
           <div className="px-5">
-            <h2 className="text-xl tracking-widest md:text-4xl font-bold">
-              ABOUT
+            <h2 className="tracking-widest text-2xl text-bold">
+              <span className="cool-link">ABOUT ME</span>
             </h2>
           </div>
           <h1 className="text-2xl md:text-4xl font-extrabold mt-5 text-[#4CC966]">

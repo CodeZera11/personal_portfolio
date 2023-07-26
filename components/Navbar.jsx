@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="fixed w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-gray-600 ">
+      <div className="fixed z-[100] w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-gray-600 ">
         <div className="">
           <Link href={"/"} className="text-[#4CC966] text-2xl">
             Personal Portfolio
@@ -24,19 +24,19 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex gap-10 text-xl">
           <ul className="flex gap-10 text-md mr-5 text-[#4CC966]">
-            <Link className="hover:border-b" href={"/"}>
+            <Link className="cool-link-nav" href={"/"}>
               <li>Home</li>
             </Link>
-            <Link className="hover:border-b" href={"/"}>
+            <Link className="cool-link-nav" href={"/"}>
               <li>About</li>
             </Link>
-            <Link className="hover:border-b" href={"/"}>
+            <Link className="cool-link-nav" href={"/"}>
               <li>Skills</li>
             </Link>
-            <Link className="hover:border-b" href={"/"}>
+            <Link className="cool-link-nav" href={"/"}>
               <li>Projects</li>
             </Link>
-            <Link className="hover:border-b" href={"/"}>
+            <Link className="cool-link-nav" href={"/"}>
               <li>Contact</li>
             </Link>
           </ul>
