@@ -41,10 +41,7 @@ const Projectinfo = ({ params }) => {
             alt="/"
           />
           <div className="absolute z-10 top-[60%] left-[50%] w-full translate-x-[-50%] text-center translate-y-[-50%]">
-            <Link
-              target="_blank"
-              href={"https://car-showcase-pi-jade.vercel.app/"}
-            >
+            <Link target="_blank" href={project.website}>
               <h1 className="text-4xl text-white cool-link-nav cursor-pointer">
                 {project.title}
               </h1>
