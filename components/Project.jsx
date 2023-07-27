@@ -10,7 +10,7 @@ const Project = ({ title, img }) => {
     >
       <Image
         className="rounded-xl group-hover:opacity-10 group-hover:rounded-xl"
-        src={`/../public/static/projects/${img}.png`}
+        src={`/static/projects/${img}.png`}
         alt="ecommerce store"
         width={1000}
         height={1000}
