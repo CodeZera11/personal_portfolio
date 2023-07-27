@@ -37,7 +37,7 @@ const Projectinfo = ({ params }) => {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={`/../public/projects/${project.slug}.png`}
+            src={`/static/projects/${project.slug}.png`}
             alt="/"
           />
           <div className="absolute z-10 top-[60%] left-[50%] w-full translate-x-[-50%] text-center translate-y-[-50%]">
