@@ -1,7 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Project from "./Project";
+import { projects } from "@/constants";
 
 const Projects = () => {
   return (
@@ -15,11 +14,9 @@ const Projects = () => {
             What I&apos;ve built
           </h1>
           <div className="grid md:grid-cols-2 gap-8">
-            <Project title={"Ecommerce Store"} img={"ecommerce"} />
-            <Project title={"Net Info"} img={"netinfo"} />
-            <Project title={"Promptopia"} img={"promptopia"} />
-            <Project title={"Youtube Clone"} img={"ytclone"} />
-            <Project title={"Car Hub Clone"} img={"carhub"} />
+            {projects.map((project, index) => (
+              <Project title={project.title} img={project.img} key={index} />
+            ))}
           </div>
         </div>
       </div>

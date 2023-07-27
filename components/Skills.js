@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SkillCard from "./SkillCard";
+import { skills } from "@/constants";
 
 const Skills = () => {
   return (
@@ -17,18 +18,9 @@ const Skills = () => {
         </h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
-          <SkillCard name={"html"} label={"HTML"} />
-          <SkillCard name={"css"} label={"CSS"} />
-          <SkillCard name={"JS"} label={"JS"} />
-          <SkillCard name={"ts"} label={"TS"} />
-          <SkillCard name={"tailwind"} label={"Tailwind"} />
-          <SkillCard name={"react"} label={"React.js"} />
-          <SkillCard name={"nextjs"} label={"Next.js"} />
-          <SkillCard name={"nodejs"} label={"Node JS"} />
-          <SkillCard name={"expressjs"} label={"Express"} />
-          <SkillCard name={"mongodb"} label={"MongoDB"} />
-          <SkillCard name={"git"} label={"Git"} />
-          <SkillCard name={"github"} label={"GitHub"} />
+          {skills.map((skill) => (
+            <SkillCard name={skill.title} key={skill.title} img={skill.image} />
+          ))}
         </div>
       </div>
     </>

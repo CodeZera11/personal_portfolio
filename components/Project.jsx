@@ -20,7 +20,7 @@ const Project = ({ title, img }) => {
           {title}
         </h2>
         <Link
-          href="/projectinfo"
+          href={`/projectinfo/${img}`}
           className="flex items-center justify-center w-[200px] rounded-lg cursor-pointer px-3 py-1 bg-black text-white text-center m-5 hover:bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] ease-in duration-200"
         >
           More Info

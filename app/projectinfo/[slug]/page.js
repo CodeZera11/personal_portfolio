@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const projectinfo = () => {
+const projectinfo = ({ params }) => {
+  const slug = params.slug;
   return (
     <>
       <div className="w-full min-h-screen bg-gray-700">
