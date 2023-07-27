@@ -47,31 +47,35 @@ const HeroSection = () => {
         <div className="links mt-10">
           <div className="flex gap-4 lg:gap-9 md:gap-14 flex-wrap">
             <Link
-              href={"/"}
+              target="_blank"
+              href={"https://github.com/CodeZera11"}
               className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2 text-5xl"
             >
               <BsGithub color="#4CC966" size={40} />
             </Link>
             <Link
-              href={"/"}
+              target="_blank"
+              href={"https://www.linkedin.com/in/bhavesh-yadav-0759b2216/"}
               className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
             >
               <BiLogoLinkedin color="#4CC966" size={40} />
             </Link>
             <Link
-              href={"/"}
+              target="_blank"
+              href={"mailto:bhaveshy737@gmail.com"}
               className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
             >
               <AiOutlineMail color="#4CC966" size={40} />
             </Link>
             <Link
-              href={"/"}
+              target="_blank"
+              href={"https://twitter.com/yadav_bhavesh73"}
               className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
             >
               <BsTwitter color="#4CC966" size={40} />
             </Link>
             <Link
-              href={"/"}
+              href={"/#contact"}
               className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
             >
               <IoIosContact color="#4CC966" size={40} />

@@ -81,7 +81,8 @@ const Navbar = () => {
                 <Link
                   onClick={() => toggleNav()}
                   className="active:text-[#4CC966]"
-                  href={"/"}
+                  target="_blank"
+                  href={"https://github.com/CodeZera11"}
                 >
                   <li>Home</li>
                 </Link>
@@ -124,34 +125,38 @@ const Navbar = () => {
 
               <div className="p-2 flex gap-10 flex-wrap">
                 <Link
-                  href={"/"}
+                  target="_blank"
+                  href={"https://github.com/CodeZera11"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
                   <BsGithub color="#4CC966" size={25} />
                 </Link>
                 <Link
-                  href={"/"}
+                  target="_blank"
+                  href={"https://www.linkedin.com/in/bhavesh-yadav-0759b2216/"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
                   <BiLogoLinkedin color="#4CC966" size={25} />
                 </Link>
                 <Link
-                  href={"/"}
+                  target="_blank"
+                  href={"mailto:bhaveshy737@gmail.com"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
                   <AiOutlineMail color="#4CC966" size={25} />
                 </Link>
                 <Link
-                  href={"/"}
+                  target="_blank"
+                  href={"https://twitter.com/yadav_bhavesh73"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
                   <BsTwitter color="#4CC966" size={25} />
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/#contact"}
                   className="rounded-full shadow-gray-600 shadow-lg p-2"
                 >
-                  <IoIosContact size={25} />
+                  <IoIosContact size={25} color="#4CC966" />
                 </Link>
               </div>
             </div>
