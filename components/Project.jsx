@@ -4,7 +4,10 @@ import React from "react";
 
 const Project = ({ title, img }) => {
   return (
-    <div className="mt-10 relative flex items-center w-full h-auto justify-center shadow-2xl shadow-gray-900 group rounded-xl p-4 hover:bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364]">
+    <div
+      id="project"
+      className="mt-10 relative flex items-center w-full h-auto justify-center shadow-2xl shadow-gray-900 group rounded-xl p-4 hover:bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364]"
+    >
       <Image
         className="rounded-xl group-hover:opacity-10 group-hover:rounded-xl"
         src={`/../public/projects/${img}.png`}

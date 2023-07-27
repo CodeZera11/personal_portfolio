@@ -10,7 +10,7 @@ import Typewriter from "typewriter-effect";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen">
+    <div id="hero" className="w-full h-screen">
       <div className="w-full bg-gray-700 h-full flex items-center justify-center text-2xl flex-col">
         <div>
           <h2 className="tracking-widest text-sm md:text-lg text-gray-900">

@@ -6,8 +6,8 @@ import Project from "./Project";
 const Projects = () => {
   return (
     <>
-      <div className="w-full bg-gray-600 border-t-2 border-black">
-        <div className="max-w-[1240px] mx-auto p-2 py-16">
+      <div id="projects" className="w-full bg-gray-600 border-t-2 border-black">
+        <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10">
           <h2 className="uppercase cool-link tracking-widest text-2xl">
             Projects
           </h2>

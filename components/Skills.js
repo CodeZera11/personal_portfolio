@@ -5,7 +5,10 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
   return (
     <>
-      <div className="w-full p-6 flex lg:h-screen bg-gray-700 md:p-12 flex-col justify-center border-t-2 border-black">
+      <div
+        id="skills"
+        className="w-full p-6 flex lg:h-screen bg-gray-700 md:p-12 flex-col justify-center border-t-2 border-black"
+      >
         <h2 className="tracking-widest text-2xl text-bold">
           <span className="cool-link">SKILLS</span>
         </h2>

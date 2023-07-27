@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="fixed z-[100] w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-gray-600 ">
+      <div className="fixed z-[100] w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-black ">
         <div className="">
           <Link href={"/"} className="text-[#4CC966] text-2xl">
             Personal Portfolio
@@ -27,16 +27,16 @@ const Navbar = () => {
             <Link className="cool-link-nav" href={"/"}>
               <li>Home</li>
             </Link>
-            <Link className="cool-link-nav" href={"/"}>
+            <Link className="cool-link-nav" href={"/#about"}>
               <li>About</li>
             </Link>
-            <Link className="cool-link-nav" href={"/"}>
+            <Link className="cool-link-nav" href={"/#skills"}>
               <li>Skills</li>
             </Link>
-            <Link className="cool-link-nav" href={"/"}>
+            <Link className="cool-link-nav" href={"/#projects"}>
               <li>Projects</li>
             </Link>
-            <Link className="cool-link-nav" href={"/"}>
+            <Link className="cool-link-nav" href={"/#contact"}>
               <li>Contact</li>
             </Link>
           </ul>
@@ -50,7 +50,7 @@ const Navbar = () => {
       {sideNav && (
         <div
           className={
-            "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in"
+            "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in z-[100]"
           }
         >
           <div className="h-screen left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%] bg-gray-700">
@@ -78,19 +78,23 @@ const Navbar = () => {
             </div>
             <div className="mx-10 p-2 mt-16">
               <ul className="flex flex-col gap-5 uppercase text-lg">
-                <Link className="active:text-[#4CC966]" href={"/"}>
+                <Link
+                  onClick={() => setSideNav(false)}
+                  className="active:text-[#4CC966]"
+                  href={"/"}
+                >
                   <li>Home</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/"}>
+                <Link className="active:text-[#4CC966]" href={"/#about"}>
                   <li>About</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/"}>
+                <Link className="active:text-[#4CC966]" href={"/#skills"}>
                   <li>Skills</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/"}>
+                <Link className="active:text-[#4CC966]" href={"/#projects"}>
                   <li>Projects</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/"}>
+                <Link className="active:text-[#4CC966]" href={"/#contact"}>
                   <li>Contact</li>
                 </Link>
               </ul>
