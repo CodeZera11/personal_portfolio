@@ -19,7 +19,11 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
           {skills.map((skill) => (
-            <SkillCard name={skill.title} key={skill.title} img={skill.image} />
+            <SkillCard
+              title={skill.title}
+              key={skill.title}
+              img={skill.image}
+            />
           ))}
         </div>
       </div>

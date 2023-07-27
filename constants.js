@@ -29,12 +29,24 @@ export const skills = [
     image: "nextjs",
   },
   {
+    title: "Rapid API",
+    image: "rapidapi",
+  },
+  {
+    title: "Material UI",
+    image: "materialui",
+  },
+  {
     title: "Node JS",
     image: "nodejs",
   },
   {
     title: "Express",
     image: "expressjs",
+  },
+  {
+    title: "Prisma",
+    image: "prisma2",
   },
   {
     title: "Mongo DB",
@@ -109,7 +121,7 @@ export const projectdetail = [
       },
       {
         title: "Prisma",
-        img: "prisma",
+        img: "prisma2",
       },
       {
         title: "Git",
@@ -135,7 +147,7 @@ export const projectdetail = [
     technologies: [
       {
         title: "JS",
-        img: "js",
+        img: "js2",
       },
       {
         title: "Tailwind",
@@ -177,7 +189,7 @@ export const projectdetail = [
     technologies: [
       {
         title: "JS",
-        img: "js",
+        img: "js2",
       },
       {
         title: "Tailwind",
@@ -220,7 +232,7 @@ export const projectdetail = [
     technologies: [
       {
         title: "JS",
-        img: "js",
+        img: "js2",
       },
       {
         title: "Material UI",
