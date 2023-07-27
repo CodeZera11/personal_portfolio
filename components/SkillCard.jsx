@@ -8,7 +8,7 @@ const SkillCard = ({ title, img }) => {
         <div>
           <Image
             // src={`/../public/assets/skills/${img}.png`}
-            src={`/public/assets/skills${img}.png`}
+            src={`/public/static/assets/skills${img}.png`}
             width={64}
             height={64}
             alt={img}
