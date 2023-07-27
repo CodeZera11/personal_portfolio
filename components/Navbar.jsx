@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <div className="fixed z-[100] w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-black ">
         <div className="">
           <Link href={"/"} className="text-[#4CC966] text-2xl">
@@ -79,22 +79,38 @@ const Navbar = () => {
             <div className="mx-10 p-2 mt-16">
               <ul className="flex flex-col gap-5 uppercase text-lg">
                 <Link
-                  onClick={() => setSideNav(false)}
+                  onClick={() => toggleNav()}
                   className="active:text-[#4CC966]"
                   href={"/"}
                 >
                   <li>Home</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/#about"}>
+                <Link
+                  onClick={() => toggleNav()}
+                  className="active:text-[#4CC966]"
+                  href={"/#about"}
+                >
                   <li>About</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/#skills"}>
+                <Link
+                  onClick={() => toggleNav()}
+                  className="active:text-[#4CC966]"
+                  href={"/#skills"}
+                >
                   <li>Skills</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/#projects"}>
+                <Link
+                  onClick={() => toggleNav()}
+                  className="active:text-[#4CC966]"
+                  href={"/#projects"}
+                >
                   <li>Projects</li>
                 </Link>
-                <Link className="active:text-[#4CC966]" href={"/#contact"}>
+                <Link
+                  onClick={() => toggleNav()}
+                  className="active:text-[#4CC966]"
+                  href={"/#contact"}
+                >
                   <li>Contact</li>
                 </Link>
               </ul>

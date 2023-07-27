@@ -19,6 +19,7 @@ const Projects = () => {
             <Project title={"Net Info"} img={"netinfo"} />
             <Project title={"Promptopia"} img={"promptopia"} />
             <Project title={"Youtube Clone"} img={"ytclone"} />
+            <Project title={"Car Hub Clone"} img={"carhub"} />
           </div>
         </div>
       </div>

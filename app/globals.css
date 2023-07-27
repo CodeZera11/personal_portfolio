@@ -20,8 +20,8 @@ span {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
-  background: #000;
+  height: 4px;
+  background: #4cc966;
   transition: width 0.3s;
 }
 
@@ -50,7 +50,20 @@ span {
   transition: width 0.3s;
 }
 
-/* button */
+/* buttons */
+
+.button-1 {
+  background-color: black;
+  border: 3px solid #4cc966;
+  border-radius: 50px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #4cc966;
+}
+.button-1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #4cc966;
+  border: 3px solid #4cc966;
+}
 
 .button-2 {
   color: #000;
