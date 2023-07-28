@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed z-[100] w-full bg-black px-10 h-20 items-center flex justify-between shadow-md shadow-black ">
+      <div className="fixed z-[100] w-full bg-[#24272D] px-10 h-20 items-center flex justify-between border-b-2 ">
         <div className="">
           <Link href={"/"} className="text-[#4CC966] text-2xl">
             Personal Portfolio

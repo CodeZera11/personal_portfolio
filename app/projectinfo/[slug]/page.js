@@ -29,7 +29,7 @@ const Projectinfo = ({ params }) => {
 
   return (
     <>
-      <div className="w-full min-h-screen bg-gray-700">
+      <div className="w-full min-h-screen bg-[#24272D]">
         {/* Bg-image and info */}
         <div className="w-screen h-[30vh] lg:h-[40vh] relative">
           <div className="absolute top left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
@@ -64,7 +64,9 @@ const Projectinfo = ({ params }) => {
 
         {/* Project Info */}
         <div className="w-full text-center mt-10">
-          <p className="w-[90%] mx-auto">{project.description}</p>
+          <p className="w-[90%] mx-auto text-[#D4D4D6]">
+            {project.description}
+          </p>
         </div>
 
         {/* Buttons */}

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+     bg-[#24272D]
+     text-[#f4f4f5]
+     text-[#D4D4D6]
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,9 +16,44 @@ span {
   margin-bottom: 10px;
 }
 
+#typewriter {
+  color: #f4f4f5;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  color: #f4f4f5;
+  border-right: 0.15em solid #4cc966;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #4cc966;
+  }
+}
+
 .cool-link {
   display: inline-block;
-  color: #000;
+  color: #f4f4f5;
   text-decoration: none;
 }
 
@@ -32,7 +73,7 @@ span {
 
 .cool-link-nav {
   display: inline-block;
-  color: gray;
+  color: #d4d4d6;
   text-decoration: none;
 }
 

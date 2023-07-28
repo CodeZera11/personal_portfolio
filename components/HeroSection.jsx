@@ -11,29 +11,24 @@ import Typewriter from "typewriter-effect";
 const HeroSection = () => {
   return (
     <div id="hero" className="w-full h-screen">
-      <div className="w-full bg-gray-700 h-full flex items-center justify-center text-2xl flex-col">
+      <div className="w-full bg-[#24272D] h-full flex items-center justify-center text-2xl flex-col">
         <div>
-          <h2 className="tracking-widest text-sm md:text-lg text-gray-900">
+          <h2 className="tracking-widest text-sm md:text-lg text-[#D4D4D6]">
             {"Let's Build Something Together"}
           </h2>
         </div>
         <div>
-          <h1 className="text-lg md:text-5xl font-bold mt-4">
+          <h1 className="text-lg md:text-5xl font-bold mt-4 text-[#f4f4f5]">
             Hi, I&apos;m <span className="text-[#4CC966]">Bhavesh</span>
           </h1>
         </div>
         <div className="mt-3">
-          {/* <h1 className="text-5xl font-bold mt-2">A Full Stack Web Developer</h1> */}
-          <Typewriter
-            options={{
-              strings: ["FULL STACK DEVELOPER"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+          <div class="typewriter">
+            <h1>A FULL STACK WEB DEVELOPER.</h1>
+          </div>
         </div>
         <div className="mt-10 w-[100%] lg:w-[70%] lg:mx-auto">
-          <p className="text-[12px] sm:text-[14px] text-center">
+          <p className="text-[12px] sm:text-[14px] text-center text-[#D4D4D6]">
             Hello there! I&apos;m a passionate and experienced full stack
             developer ready to take your digital projects to new heights. With
             expertise in both front-end and back-end development, I bring a

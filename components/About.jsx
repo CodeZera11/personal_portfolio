@@ -6,20 +6,20 @@ const About = () => {
   return (
     <>
       <div id="about" className=" border-black border-t-2">
-        <div className="relative w-full md:h-auto lg:h-screen bg-gray-600 flex items-center justify-center flex-col">
+        <div className="relative w-full md:h-auto lg:h-screen bg-[#24272D] flex items-center justify-center flex-col">
           <div className="px-5">
-            <h2 className="tracking-widest text-2xl text-bold">
-              <span className="cool-link">ABOUT ME</span>
+            <h2 className="tracking-widest text-2xl text-bold text-gray-200">
+              <span className="cool-link ">ABOUT ME</span>
             </h2>
           </div>
           <h1 className="text-2xl md:text-4xl font-extrabold mt-5 text-[#4CC966]">
             WHO I AM
           </h1>
-          <div className="px-5 mt-3 text-[12px] md:text-[16px]">
+          <div className="px-5 mt-3 text-[12px] md:text-[16px] text-[#D4D4D6]">
             &#47;&#47; Building bridges between imagination and technology
           </div>
           <div className="px-2 md:px-12 mt-3 w-[100%] md:w-[90%]">
-            <p className="text-center text-[8px] sm:text-[10px] md:text-[15px]">
+            <p className="text-center text-[8px] sm:text-[10px] text-gray-300 md:text-[15px]">
               Hello! I&apos;m{" "}
               <span className="text-[#4CC966]">Bhavesh Yadav</span>, a
               passionate and skilled full-stack web developer with expertise in
@@ -56,7 +56,7 @@ const About = () => {
           <div className="mt-10 underline cursor-pointer">
             <Link
               href={"https://linktr.ee/codezera3"}
-              className="text-[10px] md:text-[12px]"
+              className="text-[10px] md:text-[12px] text-[#D4D4D6]"
               target="_blank"
             >
               Check out some of my latest projects here
