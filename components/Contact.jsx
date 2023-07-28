@@ -1,12 +1,52 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      toast.loading("loading...");
+      setLoading(true);
+      const response = await axios.post("/api/contact", data);
+
+      if (response.data.error) {
+        toast.dismiss();
+        toast.error(response.data.error);
+      } else {
+        toast.dismiss();
+        toast.success(response.data.message);
+      }
+    } catch (error) {
+      if (error.response.data.error) {
+        toast.dismiss();
+        toast.error(error.response.data.error);
+      } else {
+        toast.dismiss();
+        toast.error(error.message);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div id="contact" className="w-full bg-[#24272D] border-t-2 border-black">
       <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10">
@@ -86,8 +126,13 @@ const Contact = () => {
                       Name
                     </label>
                     <input
+                      value={data.name}
+                      onChange={(e) =>
+                        setData({ ...data, name: e.target.value })
+                      }
                       className="border-2 rounded-lg p-3 flex border-gray-700 bg-gray-500"
                       type="text"
+                      required
                     />
                   </div>
                   <div className="flex flex-col">
@@ -95,8 +140,13 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
+                      value={data.phone}
+                      onChange={(e) =>
+                        setData({ ...data, phone: e.target.value })
+                      }
                       className="border-2 rounded-lg p-3 flex border-gray-700 bg-gray-500"
                       type="text"
+                      required
                     />
                   </div>
                 </div>
@@ -106,8 +156,13 @@ const Contact = () => {
                       Email
                     </label>
                     <input
+                      type="email"
+                      value={data.email}
+                      onChange={(e) =>
+                        setData({ ...data, email: e.target.value })
+                      }
                       className="border-2 rounded-lg p-3 flex bg-gray-500 border-gray-700"
-                      type="text"
+                      required
                     />
                   </div>
                 </div>
@@ -117,6 +172,10 @@ const Contact = () => {
                       Message
                     </label>
                     <textarea
+                      value={data.message}
+                      onChange={(e) =>
+                        setData({ ...data, message: e.target.value })
+                      }
                       rows={7}
                       className="border-2 rounded-lg p-3 flex border-gray-700 bg-gray-500"
                       type="text"
@@ -125,7 +184,12 @@ const Contact = () => {
                 </div>
 
                 <div className="text-center mt-10 w-full flex flex-col rounded-xl">
-                  <button className="p-2  button-2 rounded-2xl">Submit</button>
+                  <button
+                    onClick={handleSubmit}
+                    className="p-2  button-2 rounded-2xl"
+                  >
+                    {loading ? "Loading..." : "Submit"}
+                  </button>
                 </div>
               </form>
             </div>
