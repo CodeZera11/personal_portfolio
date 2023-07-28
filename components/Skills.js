@@ -8,7 +8,7 @@ const Skills = () => {
     <>
       <div
         id="skills"
-        className="w-full p-6 flex lg:h-screen bg-gray-700 md:p-12 flex-col justify-center border-t-2 border-black"
+        className="w-full p-6 flex lg:h-auto bg-gray-700 md:p-12 flex-col justify-center border-t-2 border-black"
       >
         <h2 className="tracking-widest text-2xl text-bold">
           <span className="cool-link">SKILLS</span>
@@ -17,7 +17,7 @@ const Skills = () => {
           What I Can Do
         </h1>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+        <div className="grid mx-auto  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-12">
           {skills.map((skill) => (
             <SkillCard
               title={skill.title}

@@ -4,10 +4,9 @@ import React from "react";
 const SkillCard = ({ title, img }) => {
   return (
     <>
-      <div className="flex items-center justify-between p-5 border rounded-xl shadow-xl shadow-gray-800 hover:scale-105 ease-in duration-200 border-black bg-gray-600">
-        <div>
+      <div className="flex items-center justify-between p-5 border rounded-xl shadow-xl shadow-gray-800 hover:scale-105 ease-in duration-200 border-black bg-gray-600 w-[300px] h-[100px]">
+        <div className="">
           <Image
-            // src={`/public/static/assets/skills/${img}.png`}
             src={`/static/assets/skills/${img}.png`}
             width={64}
             height={64}

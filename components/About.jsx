@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div id="about" className=" border-black border-t-2">
-        <div className="relative w-full md:h-screen bg-gray-600 flex items-center justify-center flex-col">
+        <div className="relative w-full md:h-auto lg:h-screen bg-gray-600 flex items-center justify-center flex-col">
           <div className="px-5">
             <h2 className="tracking-widest text-2xl text-bold">
               <span className="cool-link">ABOUT ME</span>

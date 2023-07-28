@@ -17,9 +17,9 @@ const Contact = () => {
           Get In touch
         </h1>
 
-        <div className="grid lg:grid-cols-5 gap-8 mt-5">
+        <div className="grid lg:grid-cols-5 md:gap-8 mt-5">
           {/* Left */}
-          <div className="col-span-2 bg-gray-600 shadow-xl shadow-gray-800 p-8 rounded-xl border-2 border-black">
+          <div className="col-span-2 mx-auto bg-gray-600 shadow-xl shadow-gray-800 p-8 rounded-xl border-2 border-black">
             <Image
               src={
                 "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"

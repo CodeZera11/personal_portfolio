@@ -81,8 +81,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => toggleNav()}
                   className="active:text-[#4CC966]"
-                  target="_blank"
-                  href={"https://github.com/CodeZera11"}
+                  href={"/"}
                 >
                   <li>Home</li>
                 </Link>
