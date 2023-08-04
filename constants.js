@@ -53,6 +53,10 @@ export const skills = [
     image: "mongodb",
   },
   {
+    title: "Clerk",
+    image: "clerk",
+  },
+  {
     title: "Git",
     image: "git",
   },
@@ -83,6 +87,10 @@ export const projects = [
   {
     title: "Car Hub Clone",
     img: "carhub",
+  },
+  {
+    title: "AI Image Generator",
+    img: "ai-image",
   },
 ];
 
@@ -281,6 +289,45 @@ export const projectdetail = [
       {
         title: "Next.js",
         img: "nextjs",
+      },
+      {
+        title: "Git",
+        img: "git",
+      },
+      {
+        title: "GitHub",
+        img: "github",
+      },
+    ],
+  },
+  {
+    slug: "ai-image",
+    title: "AI Image Generator",
+    tagline: "Unleash the Power of AI Image Generator!",
+    description: `This AI Image Generator project aims to develop an advanced web application. The application's technology stack includes Typescript, Tailwind CSS, Next.js, MongoDB, Shadcn UI, Clerk Auth, and GitHub.
+    The main objective of this project is to provide users with an intuitive and user-friendly interface to effortlessly generate custom images based on their preferences. The project's frontend has been implemented using Next.js with Typescript, allowing for a robust and scalable development environment. The frontend is styled using Tailwind CSS, ensuring a responsive and visually pleasing interface across different devices and screen sizes. To support seamless user authentication and authorization, the application integrates Clerk Auth. Shadcn UI has been employed to enhance the application's visual elements and provide a consistent and delightful user experience. With its rich library of pre-built components, Shadcn UI enables developers to rapidly create an aesthetically pleasing and dynamic interface. Lastly, the project repository has been hosted on GitHub, allowing for version control, collaborative development, and seamless integration with different continuous integration/deployment pipelines.`,
+    website: "https://ai-image-rose.vercel.app/",
+    code: "https://github.com/CodeZera11/AI-Image",
+    technologies: [
+      {
+        title: "TS",
+        img: "ts",
+      },
+      {
+        title: "Tailwind",
+        img: "tailwind",
+      },
+      {
+        title: "Next.js",
+        img: "nextjs",
+      },
+      {
+        title: "Mongo DB",
+        img: "mongodb",
+      },
+      {
+        title: "Clerk",
+        img: "clerk",
       },
       {
         title: "Git",

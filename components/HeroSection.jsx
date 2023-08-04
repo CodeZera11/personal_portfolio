@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
-import Typewriter from "typewriter-effect";
+import TypewriterComponent from "typewriter-effect";
 
 const HeroSection = () => {
   return (
@@ -22,9 +22,15 @@ const HeroSection = () => {
             Hi, I&apos;m <span className="text-[#4CC966]">Bhavesh</span>
           </h1>
         </div>
-        <div className="mt-3">
-          <div class="typewriter">
-            <h1>A FULL STACK WEB DEVELOPER.</h1>
+        <div className="">
+          <div className="text-transparent bg-clip-text bg-green-500 mt-5 text-lg sm:text-lg md:text-xl lg:text-3xl">
+            <TypewriterComponent
+              options={{
+                strings: ["FULL STACK WEB DEVELOPER!"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </div>
         </div>
         <div className="mt-10 w-[100%] lg:w-[70%] lg:mx-auto">
