@@ -94,6 +94,30 @@ export const projects = [
   },
 ];
 
+// Certificates Info
+export const certificates = [
+  {
+    title: "META | META FRONT-END DEVELOPER",
+    img: "meta_front_end_developer",
+    link: "https://coursera.org/share/676cd873403cf5995dea600cc4b55ceb",
+  },
+  {
+    title: "IBM | BACKEND DEVELOPER",
+    img: "ibm_backend_developer",
+    link: "https://www.coursera.org/account/accomplishments/verify/3PVFSKW489HQ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
+  },
+  {
+    title: "MONGODB",
+    img: "mongodb",
+    link: "https://coursera.org/share/12dccdc5b13a2c335d948245915135db",
+  },
+  {
+    title: "C++ 17",
+    img: "c++",
+    link: "https://www.udemy.com/certificate/UC-d8b9289b-a1df-49f9-bd24-eb84dee6e15b/",
+  },
+];
+
 export const projectdetail = [
   {
     slug: "ecommerce",

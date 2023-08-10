@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
+import useDownloader from "react-use-downloader";
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -13,6 +14,8 @@ const Navbar = () => {
   const toggleNav = () => {
     setSideNav(!sideNav);
   };
+
+  const { download } = useDownloader();
 
   return (
     <div>
@@ -36,9 +39,18 @@ const Navbar = () => {
             <Link className="cool-link-nav" href={"/#projects"}>
               <li>Projects</li>
             </Link>
+            <Link className="cool-link-nav" href={"/#certificates"}>
+              <li>Certificates</li>
+            </Link>
             <Link className="cool-link-nav" href={"/#contact"}>
               <li>Contact</li>
             </Link>
+            <div
+              className="cool-link-nav"
+              onClick={() => download("/Bhavesh_Resume.pdf", "Bhavesh_Resume")}
+            >
+              <li>Download CV</li>
+            </div>
           </ul>
         </div>
 
