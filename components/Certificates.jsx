@@ -1,5 +1,5 @@
 import React from "react";
-import { certificates } from "@/constants";
+import { certificates } from "../constants";
 import Certificate from "./Certificate";
 
 const Certifications = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import { projects } from "@/constants";
+import { projects } from "../constants";
 
 const Projects = () => {
   return (
