@@ -17,14 +17,16 @@ export async function POST(request) {
       );
     }
 
-    const client = await new Contact({
-      name,
-      phone,
-      email,
-      message,
-    });
+    // const client = await new Contact({
+    //   name,
+    //   phone,
+    //   email,
+    //   message,
+    // });
 
-    await client.save();
+    // await client.save();
+
+    const 
 
     return NextResponse.json(
       { message: "I'll contact you soon" },
