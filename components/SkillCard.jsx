@@ -6,12 +6,7 @@ const SkillCard = ({ title, img }) => {
     <>
       <div className="flex items-center justify-between p-5 border rounded-xl shadow-lg shadow-green-900 hover:scale-105 ease-in duration-200 border-black bg-[#24272D] w-[300px] h-[100px]">
         <div className="">
-          <Image
-            src={`/static/assets/skills/${img}.png`}
-            width={64}
-            height={64}
-            alt={img}
-          />
+          <Image src={img} width={64} height={64} alt={img} />
         </div>
         <h1 className="text-2xl text-[#f4f4f5]">{title}</h1>
       </div>

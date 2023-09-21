@@ -22,7 +22,7 @@ const Skills = async () => {
               <SkillCard
                 title={skill.title}
                 key={skill.title}
-                img={skill.image}
+                img={skill.icon}
               />
             ))}
           </div>

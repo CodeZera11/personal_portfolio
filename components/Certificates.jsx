@@ -1,8 +1,11 @@
 import React from "react";
-import { certificates } from "../constants";
 import Certificate from "./Certificate";
+import prisma from "../lib/prisma";
 
-const Certifications = () => {
+const Certifications = async () => {
+  const certificates = await prisma.certificate.findMany({});
+  console.log({ certificates });
+
   return (
     <>
       <div
@@ -20,7 +23,7 @@ const Certifications = () => {
             {certificates.map((certificate, index) => (
               <Certificate
                 title={certificate.title}
-                img={certificate.img}
+                image={certificate.image}
                 link={certificate.link}
                 key={index}
               />
