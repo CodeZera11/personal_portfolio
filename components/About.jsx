@@ -22,8 +22,8 @@ const About = () => {
             <p className="text-center text-[8px] sm:text-[10px] text-gray-300 md:text-[15px]">
               Hello! I&apos;m{" "}
               <span className="text-[#4CC966]">Bhavesh Yadav</span>, a
-              passionate and skilled full-stack web developer with expertise in
-              HTML, CSS, JavaScript, ReactJS,
+              passionate, experienced and skilled full-stack web developer with
+              expertise in HTML, CSS, JavaScript, ReactJS,
               <br /> Next.js, Node.js, Express, MongoDB, and Git. At 21 years
               old, I&apos;ve already gained substantial experience in developing
               dynamic and user-friendly websites. <br />
