@@ -2,15 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Certificate = ({ title, img, link }) => {
+const Certificate = ({ title, image, link }) => {
   return (
     <div
       id="certificates"
       className="mt-10 relative flex items-center w-full h-auto justify-center shadow-2xl shadow-gray-900 group rounded-xl p-4 hover:bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364]"
     >
       <Image
-        className="rounded-xl group-hover:opacity-10 group-hover:rounded-xl"
-        src={`/static/certificates/${img}.png`}
+        className="rounded-xl group-hover:opacity-10 opacity-30 group-hover:rounded-xl"
+        src={image}
         alt={title}
         width={1000}
         height={1000}

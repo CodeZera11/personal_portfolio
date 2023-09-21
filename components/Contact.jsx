@@ -145,7 +145,7 @@ const Contact = () => {
                         setData({ ...data, phone: e.target.value })
                       }
                       className="border-2 rounded-lg p-3 flex border-gray-700 bg-gray-500"
-                      type="text"
+                      type="number"
                       required
                     />
                   </div>
