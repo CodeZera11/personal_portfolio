@@ -1,10 +1,7 @@
-import { connectToDb } from "@/db/ConnectToDB";
-import Contact from "@/models/contactModel";
 import { NextResponse } from "next/server";
+import prisma from "../../../lib/prisma";
 
-connectToDb();
-
-export async function POST(request) {
+export async function POST(request: Request) {
   try {
     const data = await request.json();
 
@@ -17,16 +14,14 @@ export async function POST(request) {
       );
     }
 
-    // const client = await new Contact({
-    //   name,
-    //   phone,
-    //   email,
-    //   message,
-    // });
-
-    // await client.save();
-
-    const 
+    await prisma.contact.create({
+      data: {
+        name,
+        phone,
+        email,
+        message,
+      },
+    });
 
     return NextResponse.json(
       { message: "I'll contact you soon" },
