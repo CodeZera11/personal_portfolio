@@ -1,10 +1,10 @@
 "use client";
 
-import SkillCard from "@/components/SkillCard";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { projectdetail } from "@/constants";
+import SkillCard from "../../../components/SkillCard";
+import { projectdetail } from "../../../constants";
 
 const Projectinfo = ({ params }) => {
   const slug = params.slug;
