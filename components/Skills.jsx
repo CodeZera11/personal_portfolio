@@ -13,11 +13,11 @@ const Skills = () => {
 
   const getSkills = async () => {
     const data = await fetchSkills();
-    return data;
+    setSkills(data);
   };
 
   useEffect(() => {
-    getSkills().then((response) => setSkills(response));
+    getSkills();
   }, []);
 
   return (
