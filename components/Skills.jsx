@@ -6,7 +6,7 @@ import prisma from "../lib/prisma";
 export const revalidate = 60;
 
 const Skills = async () => {
-  const skills = await prisma.skill.findMany({});
+  const skills = await prisma.skill.findRaw({});
 
   return (
     <div id="skills">
