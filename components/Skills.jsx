@@ -1,5 +1,4 @@
 // import Image from "next/image";
-import React from "react";
 import SkillCard from "./SkillCard";
 import prisma from "../lib/prisma";
 // import { skills } from "../constants";

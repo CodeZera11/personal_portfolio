@@ -2,9 +2,10 @@ import React from "react";
 import Certificate from "./Certificate";
 import prisma from "../lib/prisma";
 
+export const revalidate = 60;
+
 const Certifications = async () => {
   const certificates = await prisma.certificate.findMany({});
-  console.log({ certificates });
 
   return (
     <>
