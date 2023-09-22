@@ -7,3 +7,9 @@ export const fetchSkills = async () => {
 
   return skills;
 };
+
+export const fetchCertificates = async () => {
+  const certificates = await prisma.certificate.findMany({});
+
+  return certificates;
+};

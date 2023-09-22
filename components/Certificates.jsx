@@ -1,11 +1,21 @@
-import React from "react";
+"use client";
+import { useEffect, useState } from "react";
 import Certificate from "./Certificate";
-import prisma from "../lib/prisma";
+import { fetchCertificates } from "../actions/server-actions";
 
 export const revalidate = 60;
 
-const Certifications = async () => {
-  const certificates = await prisma.certificate.findMany({});
+const Certifications = () => {
+  const [certificates, setCertificates] = useState(null);
+
+  const getCertificates = async () => {
+    const response = await fetchCertificates();
+    setCertificates(response);
+  };
+
+  useEffect(() => {
+    getCertificates();
+  }, []);
 
   return (
     <>
@@ -21,14 +31,20 @@ const Certifications = async () => {
             What I&apos;ve Learned
           </h1>
           <div className="grid md:grid-cols-2 gap-8">
-            {certificates.map((certificate, index) => (
-              <Certificate
-                title={certificate.title}
-                image={certificate.image}
-                link={certificate.link}
-                key={index}
-              />
-            ))}
+            {certificates && certificates.length > 0 ? (
+              certificates.map((certificate, index) => (
+                <Certificate
+                  title={certificate.title}
+                  image={certificate.image}
+                  link={certificate.link}
+                  key={index}
+                />
+              ))
+            ) : (
+              <h1 className="text-center text-white text-2xl p-4">
+                Loading...
+              </h1>
+            )}
           </div>
         </div>
       </div>
