@@ -4,6 +4,8 @@ import SkillCard from "./SkillCard";
 import prisma from "../lib/prisma";
 // import { skills } from "../constants";
 
+export const revalidate = 60;
+
 const Skills = async () => {
   const skills = await prisma.skill.findMany({});
 
