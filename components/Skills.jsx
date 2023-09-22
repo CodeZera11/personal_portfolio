@@ -1,12 +1,24 @@
+"use client";
+
+import { fetchSkills } from "../actions/server-actions";
 // import Image from "next/image";
 import SkillCard from "./SkillCard";
-import prisma from "../lib/prisma";
+import { useEffect, useState } from "react";
 // import { skills } from "../constants";
 
 export const revalidate = 60;
 
-const Skills = async () => {
-  const skills = await prisma.skill.findRaw({});
+const Skills = () => {
+  const [skills, setSkills] = useState(null);
+
+  const getSkills = async () => {
+    const data = await fetchSkills();
+    return data;
+  };
+
+  useEffect(() => {
+    getSkills().then((response) => setSkills(response));
+  }, []);
 
   return (
     <div id="skills">
@@ -17,7 +29,7 @@ const Skills = async () => {
         <h1 className="text-4xl text-extrabold mt-4 text-[#4CC966]">
           What I Can Do
         </h1>
-        {skills.length > 0 ? (
+        {skills && skills.length > 0 ? (
           <div className="grid mx-auto  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-12">
             {skills.map((skill) => (
               <SkillCard
@@ -28,9 +40,7 @@ const Skills = async () => {
             ))}
           </div>
         ) : (
-          <h1 className="text-center text-white text-2xl p-4">
-            No Skills Available
-          </h1>
+          <h1 className="text-center text-white text-2xl p-4">Loading...</h1>
         )}
       </div>
     </div>
