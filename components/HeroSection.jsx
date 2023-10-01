@@ -7,15 +7,20 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 import TypewriterComponent from "typewriter-effect";
+import { TypingText } from "./CustomText";
 
 const HeroSection = () => {
   return (
     <div id="hero" className="w-full h-screen">
       <div className="w-full bg-[#24272D] h-full flex items-center justify-center text-2xl flex-col">
         <div>
-          <h2 className="tracking-widest text-sm md:text-lg text-[#D4D4D6]">
+          {/* <h2 className="tracking-widest text-sm md:text-lg text-[#D4D4D6]">
             {"Let's Build Something Together"}
-          </h2>
+          </h2> */}
+          <TypingText
+            title={"Let's Build Something Together"}
+            textStyles="tracking-widest text-sm md:text-lg text-[#D4D4D6]"
+          />
         </div>
         <div>
           <h1 className="text-lg md:text-5xl font-bold mt-4 text-[#f4f4f5]">
