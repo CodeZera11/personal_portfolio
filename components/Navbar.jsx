@@ -7,6 +7,8 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 import useDownloader from "react-use-downloader";
+import { motion } from "framer-motion";
+import { fadeIn } from "../lib/motion";
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -18,7 +20,7 @@ const Navbar = () => {
   const { download } = useDownloader();
 
   return (
-    <div>
+    <motion.nav variants={fadeIn("up", "tween", 1, 2)}>
       <div className="fixed z-[100] w-full bg-[#24272D] px-10 h-20 items-center flex justify-between border-b-2 ">
         <div className="">
           <Link href={"/"} className="text-[#4CC966] text-2xl">
@@ -174,7 +176,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.nav>
   );
 };
 

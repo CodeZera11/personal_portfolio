@@ -8,11 +8,16 @@ import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 import TypewriterComponent from "typewriter-effect";
 import { TypingText } from "./CustomText";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../lib/motion";
 
 const HeroSection = () => {
   return (
     <div id="hero" className="w-full h-screen">
-      <div className="w-full bg-[#24272D] h-full flex items-center justify-center text-2xl flex-col">
+      <motion.div
+        variants={staggerContainer}
+        className="w-full bg-[#24272D] h-full flex items-center justify-center text-2xl flex-col"
+      >
         <div>
           {/* <h2 className="tracking-widest text-sm md:text-lg text-[#D4D4D6]">
             {"Let's Build Something Together"}
@@ -88,7 +93,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
