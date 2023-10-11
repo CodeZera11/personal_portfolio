@@ -26,7 +26,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`relative ${styles.xPaddings} py-8 relative`}
+      className={`relative px-10 py-10`}
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
 

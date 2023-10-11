@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
-      {/* <HeroSection />
+      <HeroSection />
       <About />
       <Skills />
       <Projects />
       <Certifications />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }
