@@ -47,7 +47,7 @@ const Navbar = () => {
       >
         <Link
           href={"/"}
-          className="font-extrabold text-white text-[30px] sm:text-[24px] tracking-wide"
+          className="font-extrabold text-white text-[30px] sm:text-[24px] tracking-wide flex-wrap"
         >
           Bhavesh&apos; Portfolio
         </Link>
