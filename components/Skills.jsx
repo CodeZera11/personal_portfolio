@@ -17,12 +17,12 @@ const Skills = () => {
   };
 
   useEffect(() => {
-    getSkills();
+    // getSkills();
   }, []);
 
   return (
     <div id="skills">
-      <div className="w-full p-6 flex lg:h-auto bg-primary-black md:p-12 flex-col justify-center border-t-2 border-black">
+      <div className="w-full p-6 flex lg:h-auto bg-primary-black md:p-12 flex-col justify-center">
         <h2 className="tracking-widest text-2xl text-bold">
           <span className="cool-link">SKILLS</span>
         </h2>

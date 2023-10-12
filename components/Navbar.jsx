@@ -49,7 +49,7 @@ const Navbar = () => {
           href={"/"}
           className="font-extrabold text-white text-[30px] sm:text-[24px] tracking-wide flex-wrap"
         >
-          Bhavesh&apos; Portfolio
+          Bhavesh&apos;s Portfolio
         </Link>
         <motion.div
           variants={container(0.5, 0.15)}

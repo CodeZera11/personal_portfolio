@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="h-[100vh]  flex items-center border-black border-t-2 bg-primary-black "
+        className="mt-10 sm:mt-0 sm:h-[100vh] flex items-center bg-primary-black "
       >
         {/* <div className="absolute w-[80%] opacity-60  inset-8 gradient-04" /> */}
         <div className=" flex items-center justify-center flex-col">
