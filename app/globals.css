@@ -10,6 +10,19 @@
   scroll-behavior: smooth;
 }
 
+.box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 60vmin;
+  height: 50vmin;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,

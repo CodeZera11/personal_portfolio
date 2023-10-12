@@ -8,11 +8,13 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-primary-black h-screen">
+    <div className="bg-primary-black">
       <Navbar />
       <HeroSection />
       <About />
+      {/* <div className="gradient-03 z-0 opacity-30" /> */}
       <Skills />
+      {/* <div className="gradient-04 z-0 opacity-20" /> */}
       <Projects />
       <Certifications />
       <Contact />

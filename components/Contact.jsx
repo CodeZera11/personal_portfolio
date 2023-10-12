@@ -48,7 +48,11 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full bg-[#24272D] border-t-2 border-black">
+    <div
+      id="contact"
+      className="w-full bg-primary-black border-t-2 border-black"
+    >
+      {/* <div className="absolute w-[80%] opacity-30  inset-1 gradient-03" /> */}
       <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10">
         <h2 className="uppercase cool-link tracking-widest text-2xl">
           Contact
@@ -59,7 +63,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 md:gap-8 mt-5">
           {/* Left */}
-          <div className="col-span-2 mx-auto bg-gray-600 shadow-xl shadow-gray-800 p-8 rounded-xl border-2 border-black">
+          <div className="col-span-2 mx-auto bg-primary-black text-secondary-white shadow-xl shadow-gray-800 p-8 rounded-xl border-2 border-black">
             <Image
               src={
                 "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
@@ -71,7 +75,7 @@ const Contact = () => {
             />
 
             <h1 className="mt-5 text-3xl font-bold">Bhavesh Yadav</h1>
-            <h2 className="text-gray-900">Full Stack Web Developer</h2>
+            <h2 className="">Full Stack Web Developer</h2>
             <p className="mt-5 text-md">
               I am available for freelance or full-time job.
             </p>
@@ -117,7 +121,7 @@ const Contact = () => {
           </div>
 
           {/* Right */}
-          <div className=" col-span-3 shadow-xl bg-gray-600 shadow-gray-800 p-4 lg:p-8 rounded-xl border-2 border-black">
+          <div className=" col-span-3 shadow-xl bg-primary-black text-secondary-white shadow-gray-800 p-4 lg:p-8 rounded-xl border-2 border-black">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 w-full gap-4">
@@ -186,7 +190,7 @@ const Contact = () => {
                 <div className="text-center mt-10 w-full flex flex-col rounded-xl">
                   <button
                     onClick={handleSubmit}
-                    className="p-2  button-2 rounded-2xl"
+                    className="p-2  button-2 rounded-2xl bg-secondary-white"
                   >
                     {loading ? "Loading..." : "Submit"}
                   </button>
