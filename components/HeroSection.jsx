@@ -1,95 +1,113 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 import TypewriterComponent from "typewriter-effect";
-import { TypingText } from "./CustomText";
+import { TitleText, TypingText, TypingText2 } from "./CustomText";
+import { motion } from "framer-motion";
+import {
+  container,
+  fadeIn,
+  section_variant,
+  slideIn,
+  staggerContainer,
+  textVariant,
+} from "../lib/motion";
+import styles from "../styles";
+
+const sections = [
+  {
+    title: "Skills",
+    link: "#skills",
+  },
+  {
+    title: "Projects",
+    link: "#projects",
+  },
+  {
+    title: "Certificates",
+    link: "#certificates",
+  },
+];
 
 const HeroSection = () => {
-  return (
-    <div id="hero" className="w-full h-screen">
-      <div className="w-full bg-[#24272D] h-full flex items-center justify-center text-2xl flex-col">
-        <div>
-          {/* <h2 className="tracking-widest text-sm md:text-lg text-[#D4D4D6]">
-            {"Let's Build Something Together"}
-          </h2> */}
-          <TypingText
-            title={"Let's Build Something Together"}
-            textStyles="tracking-widest text-sm md:text-lg text-[#D4D4D6]"
-          />
-        </div>
-        <div>
-          <h1 className="text-lg md:text-5xl font-bold mt-4 text-[#f4f4f5]">
-            Hi, I&apos;m <span className="text-[#4CC966]">Bhavesh</span>
-          </h1>
-        </div>
-        <div className="">
-          <div className="text-transparent bg-clip-text bg-green-500 mt-5 text-lg sm:text-lg md:text-xl lg:text-3xl">
-            <TypewriterComponent
-              options={{
-                strings: ["FULL STACK WEB DEVELOPER!"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-        </div>
-        <div className="mt-10 w-[100%] lg:w-[70%] lg:mx-auto">
-          <p className="text-[12px] sm:text-[14px] text-center text-[#D4D4D6]">
-            Hello there! I&apos;m a passionate and experienced full stack
-            developer ready to take your digital projects to new heights. With
-            expertise in both front-end and back-end development, I bring a
-            holistic approach to crafting robust and user-friendly web
-            applications. From captivating user interfaces to efficient
-            server-side functionality, I thrive on creating seamless and
-            engaging experiences for users.
-          </p>
-        </div>
+  const dragConstraint = useRef(null);
 
-        <div className="links mt-10">
-          <div className="flex gap-4 lg:gap-9 md:gap-14 flex-wrap">
-            <Link
-              target="_blank"
-              href={"https://github.com/CodeZera11"}
-              className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2 text-5xl"
+  return (
+    <section className="h-[92vh] bg-primary-black w-full flex justify-center relative">
+      <div className="absolute w-[80%] opacity-30  inset-1 gradient-02" />
+      <div className="flex items-center justify-center py-8">
+        <div className="flex items-center p-20 gap-28 m-44">
+          <div className="flex flex-col gap-5 w-1/2">
+            <motion.h1
+              variants={fadeIn("up", "spring", 0.1, 1)}
+              initial="hidden"
+              animate="show"
+              className="text-8xl text-white text-start font-extralight -ml-4"
             >
-              <BsGithub color="#4CC966" size={40} />
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://www.linkedin.com/in/bhavesh-yadav-0759b2216/"}
-              className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
-            >
-              <BiLogoLinkedin color="#4CC966" size={40} />
-            </Link>
-            <Link
-              target="_blank"
-              href={"mailto:bhaveshy737@gmail.com"}
-              className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
-            >
-              <AiOutlineMail color="#4CC966" size={40} />
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://twitter.com/yadav_bhavesh73"}
-              className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
-            >
-              <BsTwitter color="#4CC966" size={40} />
-            </Link>
-            <Link
-              href={"/#contact"}
-              className="rounded-full hover:scale-125 ease-in duration-200 shadow-gray-600 shadow-lg p-2"
-            >
-              <IoIosContact color="#4CC966" size={40} />
-            </Link>
+              Welcome.
+            </motion.h1>
+
+            <div className="flex gap-5">
+              <motion.div
+                variants={fadeIn("right", "tween", 0.5, 0.5)}
+                initial="hidden"
+                whileInView="show"
+                className="h-auto bg-emerald-400 w-2 rounded-full"
+              />
+              <div className="flex flex-col gap-2">
+                <TypingText
+                  title={
+                    "Hello there! I'm a passionate and experienced full stack developer ready to take your digital projects to new heights. With expertise in both front-end and back-end development, I bring a holistic approach to crafting robust and user-friendly web applications. "
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex items-start flex-col gap-10">
+            <div className="flex flex-col gap-4">
+              <motion.h3
+                variants={fadeIn("left", "tween", 0.5, 0.5)}
+                initial="hidden"
+                animate="show"
+                className="text-5xl tracking-wide text-white"
+              >
+                Check Out My
+              </motion.h3>
+              <motion.div
+                variants={fadeIn("up", "tween", 0.5, 0.5)}
+                initial="hidden"
+                whileInView="show"
+                className="bg-emerald-400 h-1 w-[150px] rounded-full ml-1"
+              />
+            </div>
+            <div className="">
+              <motion.ul
+                variants={container(1, 0.2)}
+                initial="hidden"
+                whileInView="show"
+                className="flex gap-10  text-white"
+              >
+                {sections.map((section) => (
+                  <motion.li
+                    key={section.link}
+                    variants={section_variant}
+                    whileHover={{ scale: 1.2 }}
+                    className="font-extralight text-2xl hover:text-emerald-400 cursor-pointer"
+                  >
+                    <Link href={section.link}>{section.title}</Link>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

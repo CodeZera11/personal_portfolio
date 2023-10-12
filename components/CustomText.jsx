@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
-    variants={textContainer}
-    className={`font-normal ${textStyles} text-[#C7C7C7] text-[14px]`}
+    variants={textContainer(0.5, 0.001)}
+    initial="hidden"
+    whileInView="show"
+    className={`font-normal ${textStyles}  text-[#C7C7C7] text-[16px]`}
   >
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
@@ -17,12 +19,16 @@ export const TypingText = ({ title, textStyles }) => (
 );
 
 export const TitleText = ({ title, textStyles }) => (
-  <motion.h2
-    variants={textVariant2}
+  <motion.h1
+    variants={textContainer(0.1)}
     initial="hidden"
     whileInView="show"
-    className={`${textStyles} mt-[8px] font-bold md:text-[64px] text-white`}
+    className={`${textStyles} text-8xl text-white text-start font-extralight -ml-4`}
   >
-    {title}
-  </motion.h2>
+    {Array.from(title).map((letter, index) => (
+      <motion.span key={index} variants={textVariant2}>
+        {letter}
+      </motion.span>
+    ))}
+  </motion.h1>
 );

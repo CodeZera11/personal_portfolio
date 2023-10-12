@@ -5,8 +5,12 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div id="about" className=" border-black border-t-2">
-        <div className="relative w-full md:h-auto lg:h-screen bg-[#24272D] flex items-center justify-center flex-col">
+      <div
+        id="about"
+        className="h-[100vh]  flex items-center border-black border-t-2 bg-primary-black "
+      >
+        {/* <div className="absolute w-[80%] opacity-60  inset-8 gradient-04" /> */}
+        <div className=" flex items-center justify-center flex-col">
           <div className="px-5">
             <h2 className="tracking-widest text-2xl text-bold text-gray-200">
               <span className="cool-link ">ABOUT ME</span>
