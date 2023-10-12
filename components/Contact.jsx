@@ -48,12 +48,8 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="contact"
-      className="w-full bg-primary-black border-t-2 border-black"
-    >
-      {/* <div className="absolute w-[80%] opacity-30  inset-1 gradient-03" /> */}
-      <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10">
+    <div id="contact" className="w-full bg-primary-black relative">
+      <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10 z-50">
         <h2 className="uppercase cool-link tracking-widest text-2xl">
           Contact
         </h2>
