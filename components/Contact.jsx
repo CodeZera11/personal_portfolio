@@ -48,10 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="contact"
-      className="w-full bg-primary-black border-t-2 border-black relative"
-    >
+    <div id="contact" className="w-full bg-primary-black relative">
       <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10 z-50">
         <h2 className="uppercase cool-link tracking-widest text-2xl">
           Contact

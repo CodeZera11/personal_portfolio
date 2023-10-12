@@ -18,6 +18,7 @@ import {
   textVariant,
 } from "../lib/motion";
 import styles from "../styles";
+import Image from "next/image";
 
 const sections = [
   {
