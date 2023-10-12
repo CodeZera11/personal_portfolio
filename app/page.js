@@ -13,9 +13,9 @@ export default function Home() {
       <HeroSection />
       <div className="h-0.5 w-full bg-gray-300" />
       <About />
-      {/* <div className="gradient-03 z-0 opacity-30" /> */}
+      <div className="gradient-03 z-0 opacity-30" />
       <Skills />
-      {/* <div className="gradient-04 z-0 opacity-20" /> */}
+      <div className="gradient-04 z-0 opacity-20" />
       <Projects />
       <Certifications />
       <Contact />

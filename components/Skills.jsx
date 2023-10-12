@@ -22,7 +22,8 @@ const Skills = () => {
 
   return (
     <div id="skills">
-      <div className="w-full p-6 flex lg:h-auto bg-primary-black md:p-12 flex-col justify-center">
+      <div className="w-full p-6 flex lg:h-auto bg-primary-black md:p-12 flex-col justify-center relative">
+        <div className="absolute w-[80%] opacity-30  inset-1 gradient-01" />
         <h2 className="tracking-widest text-2xl text-bold">
           <span className="cool-link">SKILLS</span>
         </h2>

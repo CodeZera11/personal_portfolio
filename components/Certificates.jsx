@@ -23,7 +23,7 @@ const Certifications = () => {
         id="projects"
         className="w-full bg-primary-black border-t-2 border-black relative"
       >
-        {/* <div className="absolute w-[80%] opacity-30  inset-1 gradient-01" /> */}
+        <div className="absolute w-[80%] opacity-30  inset-1 gradient-01" />
         <div className="max-w-[1240px] mx-auto p-2 py-16 mt-10">
           <h2 className="uppercase cool-link tracking-widest text-2xl">
             Certifications
