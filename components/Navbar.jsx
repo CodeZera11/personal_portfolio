@@ -40,16 +40,14 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`px-10 pt-10`}
+      className={`px-10 pt-10 w-full`}
     >
-      {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
-
       <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8 items-center z-10`}
+        className={`${styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8 items-center z-10`}
       >
         <Link
           href={"/"}
-          className="font-extrabold text-white text-[24px] tracking-wide"
+          className="font-extrabold text-white text-[30px] sm:text-[24px] tracking-wide"
         >
           Bhavesh&apos; Portfolio
         </Link>

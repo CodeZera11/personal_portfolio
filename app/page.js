@@ -8,7 +8,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-primary-black">
+    <div className="bg-primary-black overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <About />
