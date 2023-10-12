@@ -5,8 +5,11 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div id="about" className=" border-black border-t-2">
-        <div className="relative bg-[#24272D] flex items-center justify-center flex-col">
+      <div
+        id="about"
+        className="h-full bg-primary-black flex items-center border-black border-t-2"
+      >
+        <div className="relative flex items-center justify-center flex-col">
           <div className="px-5">
             <h2 className="tracking-widest text-2xl text-bold text-gray-200">
               <span className="cool-link ">ABOUT ME</span>
