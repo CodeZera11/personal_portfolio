@@ -1,24 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import React, { useRef } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BiLogoLinkedin } from "react-icons/bi";
-import { BsGithub, BsTwitter } from "react-icons/bs";
-import { IoIosContact } from "react-icons/io";
-import TypewriterComponent from "typewriter-effect";
-import { TitleText, TypingText, TypingText2 } from "./CustomText";
+import React from "react";
+import { TypingText } from "./CustomText";
 import { motion } from "framer-motion";
-import {
-  container,
-  fadeIn,
-  section_variant,
-  slideIn,
-  staggerContainer,
-  textVariant,
-} from "../lib/motion";
-import styles from "../styles";
-import Image from "next/image";
+import { container, fadeIn, section_variant } from "../lib/motion";
 
 const sections = [
   {
@@ -38,7 +24,7 @@ const sections = [
 const HeroSection = () => {
   return (
     <section className=" bg-primary-black w-full flex justify-center relative">
-      <div className="absolute w-[80%] z-0 opacity-30 inset-1 gradient-02" />
+      <div className="absolute w-[80%] z-0 opacity-30 inset-1 gradient-01" />
       <div className="flex flex-col lg:flex-row items-center justify-center ">
         <div className="flex flex-col lg:flex-row items-center sm:px-10 sm:py-20 lg:px-20  gap-8 lg:gap-28 lg:m-44">
           <div className="flex flex-col gap-5 p-5 lg:w-1/2">
@@ -56,7 +42,7 @@ const HeroSection = () => {
                 variants={fadeIn("right", "tween", 0.5, 0.5)}
                 initial="hidden"
                 whileInView="show"
-                className="h-auto bg-emerald-400 w-3 rounded-full"
+                className="h-auto bg-emerald-400 w-[20px] rounded-full"
               />
               <div className="">
                 <TypingText
