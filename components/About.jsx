@@ -5,9 +5,9 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div
+      <section
         id="about"
-        className="mt-10 sm:mt-0 sm:h-[100vh] flex items-center bg-primary-black relative"
+        className="mt-10 sm:mt-0 flex items-center bg-primary-black relative h-[100vh]"
       >
         <div className="absolute w-[80%] opacity-60  inset-8 gradient-04" />
         <div className=" flex items-center justify-center flex-col">
@@ -69,7 +69,7 @@ const About = () => {
 
           <div className=""></div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

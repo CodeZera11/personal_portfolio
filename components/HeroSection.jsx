@@ -37,10 +37,10 @@ const sections = [
 
 const HeroSection = () => {
   return (
-    <section className="h-auto lg:h-[92vh] bg-primary-black w-full flex justify-center relative">
+    <section className=" bg-primary-black w-full flex justify-center relative">
       <div className="absolute w-[80%] z-0 opacity-30 inset-1 gradient-02" />
-      <div className="flex flex-col lg:flex-row items-center justify-center py-8">
-        <div className="flex flex-col lg:flex-row items-center sm:px-10 sm:py-20 lg:p-20  gap-8 lg:gap-28 lg:m-44">
+      <div className="flex flex-col lg:flex-row items-center justify-center ">
+        <div className="flex flex-col lg:flex-row items-center sm:px-10 sm:py-20 lg:px-20  gap-8 lg:gap-28 lg:m-44">
           <div className="flex flex-col gap-5 p-5 lg:w-1/2">
             <motion.h1
               variants={fadeIn("up", "spring", 0.1, 1)}
