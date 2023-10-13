@@ -71,38 +71,26 @@ export const projects = [
   {
     title: "Ecommerce Store",
     img: "ecommerce",
-    website: "https://ecommerce-project-dj7m.vercel.app/",
-    code: "https://github.com/CodeZera11/ecommerce_project",
   },
   {
     title: "Net Info",
     img: "netinfo",
-    website: "https://net-info.vercel.app/",
-    code: "https://github.com/CodeZera11/netinfo",
   },
   {
     title: "Promptopia",
     img: "promptopia",
-    website: "https://promptopia-after.vercel.app/",
-    code: "https://github.com/CodeZera11/promptopia",
   },
   {
     title: "Youtube Clone",
     img: "ytclone",
-    website: "https://verdant-marshmallow-2ad20e.netlify.app/",
-    code: "https://github.com/CodeZera11/youtube_clone",
   },
   {
     title: "Car Hub Clone",
     img: "carhub",
-    website: "https://car-showcase-pi-jade.vercel.app/",
-    code: "https://github.com/CodeZera11/car_showcase",
   },
   {
     title: "AI Image Generator",
     img: "ai-image",
-    website: "https://ai-image-rose.vercel.app/",
-    code: "https://github.com/CodeZera11/AI-Image",
   },
 ];
 

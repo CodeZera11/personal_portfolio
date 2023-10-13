@@ -17,7 +17,7 @@
   height: 50vmin;
 }
 
-main {
+body {
   scroll-snap-type: y mandatory;
 }
 

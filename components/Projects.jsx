@@ -16,13 +16,7 @@ const Projects = () => {
           </h1>
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Project
-                title={project.title}
-                website={project.website}
-                code={project.code}
-                img={project.img}
-                key={index}
-              />
+              <Project title={project.title} img={project.img} key={index} />
             ))}
           </div>
         </div>

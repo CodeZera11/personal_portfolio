@@ -8,7 +8,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <main className="bg-primary-black overflow-x-hidden flex flex-col ">
+    <div className="bg-primary-black overflow-x-hidden flex flex-col ">
       <Navbar />
       <HeroSection />
       <div className="h-0.5 w-full bg-emerald-200" />
@@ -23,6 +23,6 @@ export default function Home() {
       <Certifications />
       <div className="h-0.5 w-full bg-emerald-200" />
       <Contact />
-    </main>
+    </div>
   );
 }
