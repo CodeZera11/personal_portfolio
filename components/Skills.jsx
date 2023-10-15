@@ -1,10 +1,8 @@
 "use client";
 
 import { fetchSkills } from "../actions/server-actions";
-// import Image from "next/image";
 import SkillCard from "./SkillCard";
 import { useEffect, useState } from "react";
-// import { skills } from "../constants";
 
 export const revalidate = 60;
 
@@ -17,7 +15,7 @@ const Skills = () => {
   };
 
   useEffect(() => {
-    // getSkills();
+    getSkills();
   }, []);
 
   return (

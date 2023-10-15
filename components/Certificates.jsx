@@ -14,7 +14,7 @@ const Certifications = () => {
   };
 
   useEffect(() => {
-    // getCertificates();
+    getCertificates();
   }, []);
 
   return (
